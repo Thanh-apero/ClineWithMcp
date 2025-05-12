@@ -9,7 +9,7 @@ Sau khi cài đặt xong, mở terminal và gõ lệnh sau để kiểm tra:
 node -v
 ```
 
-Nếu cài đặt thành công, bạn sẽ thấy phiên bản Node.js được hiển thị.
+Nếu cài đặt thành công, sẽ thấy phiên bản Node.js được hiển thị.
 ![image1.png](./image1.png)
 
 ## Bước 2: Tạo file cấu hình trong Android Studio
@@ -27,7 +27,7 @@ là [firebender.json](./firebender.json).
       "command": "npx",
       "args": [
         "figma-developer-mcp",
-        "--figma-api-key=",
+        "--figma-api-key=Truyền key vô đây nhen",
         "--stdio"
       ]
     }
@@ -42,4 +42,19 @@ là [firebender.json](./firebender.json).
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
+## Bước 5: Khởi động lại Android Studio và kiểm tra kết nối Fire Bender
+
+Sau khi hoàn tất các bước cài đặt:
+
+1. Đóng hoàn toàn Android Studio
+2. Khởi động lại Android Studio
+3. Mở dự án của bạn và truy cập Fire Bender
+4. Chạy lệnh kết nối tới Figma bằng cách truyền link Figma vào:
+
+```bash
+connect figma://link-tới-file-figma-của-bạn
+```
+
+Nếu kết nối thành công, bạn sẽ nhận được thông báo "Success".
+![image3.png](./image3.png)
 ```
